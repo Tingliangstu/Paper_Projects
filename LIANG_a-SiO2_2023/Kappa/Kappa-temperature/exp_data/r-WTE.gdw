@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.20</version>
+  <File>
+    <Name>F:\360MoveData\Users\Administrator\Desktop\图片6.jpg</Name>
+    <Width>1059</Width>
+    <Height>398</Height>
+  </File>
+  <Line>
+    <Caption>曲线 #1</Caption>
+    <LineColor>3,3,3</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">1363,3109,1399,3055,1435,3010,1471,2965,1507,2920,1543,2875,1588,2821,1624,2776,1669,2731,1705,2686</Points>
+    <Points MF="9">1750,2641,1786,2596,1831,2551,1867,2506,1912,2470,1948,2425,1993,2380,2038,2344,2074,2299,2128,2263</Points>
+    <Points MF="9">2173,2218,2218,2182,2263,2146,2308,2101,2353,2074,2371,2056,2398,2029,2452,1993,2497,1957,2551,1921</Points>
+    <Points MF="9">2605,1885,2659,1858,2713,1831,2758,1795,2812,1768,2866,1741,2920,1705,2974,1678,3028,1660,3082,1633</Points>
+    <Points MF="9">3136,1606,3190,1579,3244,1561,3298,1534,3361,1516,3415,1498,3469,1480,3532,1453,3595,1444,3649,1417</Points>
+    <Points MF="9">3703,1408,3757,1399,3820,1381,3874,1363,3937,1345,4000,1336,4063,1327,4117,1318,4171,1309,4234,1291</Points>
+    <Points MF="9">4297,1282,4360,1282,4405,1273,4468,1264,4531,1255,4594,1246,4648,1246,4711,1246,4765,1237,4828,1228</Points>
+    <Points MF="9">4891,1228,4954,1219,5008,1219,5071,1219,5134,1219,5188,1210,5251,1210,5305,1210</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">2065,3118,1.000000e+002</Xmin>
+  <Xmax MF="9">4981,3118,1.000000e+003</Xmax>
+  <Ymin MF="9">1183,3118,3.000000e-001</Ymin>
+  <Ymax MF="9">1183,778,2.000000e+000</Ymax>
+  <XScale>logarithmic</XScale>
+  <YScale>logarithmic</YScale>
+  <Position>1048,338</Position>
+  <Zoom>
+    <Scale>90.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+</GetDataWorkspace>

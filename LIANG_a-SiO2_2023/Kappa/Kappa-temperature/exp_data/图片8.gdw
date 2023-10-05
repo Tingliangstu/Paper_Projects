@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.20</version>
+  <File>
+    <Name>F:\360MoveData\Users\Administrator\Desktop\图片8.jpg</Name>
+    <Width>1081</Width>
+    <Height>1247</Height>
+  </File>
+  <Line>
+    <Caption>曲线 #1</Caption>
+    <LineColor>2,2,2</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">3370,5026,3676,4729,3973,4441,4279,4171,4576,3892,4873,3649,5179,3415,5476,3199,5773,2992,6070,2866</Points>
+    <Points MF="9">6367,2686,6664,2515,6961,2371,7267,2236,7573,2110,7879,2011,8185,1930,8482,1885</Points>
+  </Line>
+  <Line>
+    <Caption>曲线 #2</Caption>
+    <LineColor>2,2,2</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>230,220,20</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">3379,5323,3667,5035,3964,4756,4279,4468,4576,4216,4882,3955,5188,3703,5494,3523,5782,3325,6079,3163</Points>
+    <Points MF="9">6385,2983,6682,2839,6979,2695,7276,2551,7582,2425,7897,2317,8194,2236,8491,2200</Points>
+  </Line>
+  <Line>
+    <Caption>曲线 #3</Caption>
+    <LineColor>2,2,2</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>255,20,160</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">3343,5746,3649,5431,3964,5143,4270,4855,4576,4594,4882,4342,5170,4135,5476,3928,5773,3739,6079,3604</Points>
+    <Points MF="9">6376,3451,6664,3280,6970,3145,7267,3010,7573,2875,7879,2722,8194,2551,8482,2425</Points>
+  </Line>
+  <Line>
+    <Caption>曲线 #4</Caption>
+    <LineColor>2,2,2</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>128,220,255</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">3352,6115,3649,5809,3937,5512,4252,5242,4549,4981,4855,4774,5161,4558,5503,4423,5791,4279,6097,4144</Points>
+    <Points MF="9">6349,3937,6655,3793,6952,3640,7258,3487,7555,3307,7879,3109,8185,2893,8473,2668</Points>
+  </Line>
+  <Line>
+    <Caption>曲线 #5</Caption>
+    <LineColor>2,2,2</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>128,245,128</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">3316,6088,3649,5809,3937,5530,4270,5305,4567,5062,4864,4855,5170,4657,5476,4459,5764,4261,6061,4117</Points>
+    <Points MF="9">6358,3937,6664,3721,6961,3514,7267,3316,7564,3100,7879,2956,8176,2875,8482,2911</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">1912,9769,5.000000e+001</Xmin>
+  <Xmax MF="9">9202,9778,5.000000e+002</Xmax>
+  <Ymin MF="9">1912,9769,1.000000e-001</Ymin>
+  <Ymax MF="9">1930,373,2.000000e+000</Ymax>
+  <XScale>logarithmic</XScale>
+  <YScale>logarithmic</YScale>
+  <Position>530,409</Position>
+  <Zoom>
+    <Scale>70.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+</GetDataWorkspace>

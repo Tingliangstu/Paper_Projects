@@ -1,0 +1,18 @@
+potential      nep.txt
+velocity       1000
+
+######### Nose-Hoover ###############
+ensemble       nvt_nhc  1000   1000   100
+time_step      1
+dump_thermo    20000
+dump_position  400000
+run            400000
+
+######### compute thermal conductivity ###############
+ensemble       nvt_nhc  1000  1000  100
+compute_hnemd  1000     0     0    0.0002
+compute_shc    2        500   2    1000   400
+dump_position  4000000
+
+run            4000000
+

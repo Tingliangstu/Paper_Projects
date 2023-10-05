@@ -1,0 +1,29 @@
+potential      nep.txt
+velocity       20
+
+######### Nose-Hoover ###############
+ensemble       nvt_nhc   20   20   100
+time_step      1
+fix            0
+dump_thermo    20000
+dump_position  400000
+run            400000
+
+ensemble       nvt_lan   20   20   100
+time_step      1
+fix            0
+dump_thermo    20000
+dump_position  400000
+run            400000
+
+############################# NEMD for ballistic #######################################
+## ************** fist '2' in the compute_shc means z direciton ******************######
+# ************** second '1' in the compute_shc means grouping method 1 ******************
+
+ensemble             heat_lan  20.0  100  10.0   1  5     # 100*1 = 0.1 ps
+fix                  0
+compute              0    10    100   temperature 
+compute_shc          2    500   2    1000   400  group  0  3 
+dump_position        4000000
+
+run                  4000000

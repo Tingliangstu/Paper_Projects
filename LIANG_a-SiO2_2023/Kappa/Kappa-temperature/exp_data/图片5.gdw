@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.20</version>
+  <File>
+    <Name>F:\360MoveData\Users\Administrator\Desktop\图片5.jpg</Name>
+    <Width>862</Width>
+    <Height>732</Height>
+  </File>
+  <Line>
+    <Caption>曲线 #1</Caption>
+    <LineColor>181,181,181</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">1021,4495,1237,4261,1399,4072,1678,3820,2128,3523,2299,3424,2524,3298,2875,3271,3289,3289,3550,3244</Points>
+    <Points MF="9">3901,3091,4063,3010,4216,2920,4315,2839,4396,2776,4531,2686,4675,2587,4792,2497,4927,2389,5044,2326</Points>
+    <Points MF="9">5188,2245,5323,2155,5485,2110,5638,2038,5818,1984,6034,1912,6187,1867,6340,1840,6511,1813,6700,1786</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">1192,5593,1.000000e+000</Xmin>
+  <Xmax MF="9">6979,5593,1.000000e+003</Xmax>
+  <Ymin MF="9">1003,4693,1.000000e-002</Ymin>
+  <Ymax MF="9">1003,814,1.000000e+001</Ymax>
+  <XScale>logarithmic</XScale>
+  <YScale>logarithmic</YScale>
+  <Position>1161,-4</Position>
+  <Zoom>
+    <Scale>100.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+</GetDataWorkspace>

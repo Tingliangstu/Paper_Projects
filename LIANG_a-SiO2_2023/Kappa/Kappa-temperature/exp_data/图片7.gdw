@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GetDataWorkspace>
+  <version>2.20</version>
+  <File>
+    <Name>F:\360MoveData\Users\Administrator\Desktop\图片7.jpg</Name>
+    <Width>1213</Width>
+    <Height>1324</Height>
+  </File>
+  <Line>
+    <Caption>曲线 #1</Caption>
+    <LineColor>2,2,2</LineColor>
+    <BkColor>254,254,254</BkColor>
+    <PtColor>220,70,220</PtColor>
+    <LineType>0</LineType>
+    <Points MF="9">2398,8887,2533,8788,2650,8653,2794,8527,2920,8428,3064,8266,3199,8131,3352,7969,3505,7834,3586,7726</Points>
+    <Points MF="9">3721,7573,3865,7438,4009,7294,4153,7141,4288,7015,4414,6862,4558,6754,4684,6610,4828,6484,4972,6349</Points>
+    <Points MF="9">5116,6268,5260,6142,5404,6034,5557,5935,5701,5836,5836,5728,5908,5665,6070,5557,6205,5503,6376,5413</Points>
+    <Points MF="9">6520,5314,6682,5224,6844,5170,6934,5107,7060,5044,7222,4981,7348,4918,7492,4873,7636,4792,7780,4747</Points>
+    <Points MF="9">7933,4702,8059,4648,8212,4603,8356,4558,8500,4513,8644,4468,8788,4423,8923,4351,9076,4333,9229,4288</Points>
+    <Points MF="9">9364,4270,9508,4225,9652,4162</Points>
+  </Line>
+  <CurrentLine>0</CurrentLine>
+  <Xmin MF="9">2335,10462,3.000000e+001</Xmin>
+  <Xmax MF="9">10300,10453,1.000000e+003</Xmax>
+  <Ymin MF="9">2335,10462,1.000000e-003</Ymin>
+  <Ymax MF="9">2317,346,1.000000e-001</Ymax>
+  <XScale>logarithmic</XScale>
+  <YScale>logarithmic</YScale>
+  <Position>1344,668</Position>
+  <Zoom>
+    <Scale>100.0</Scale>
+  </Zoom>
+  <Digitize>
+    <IgnorePixels>1</IgnorePixels>
+    <LineIDMethod>2</LineIDMethod>
+  </Digitize>
+  <AutoTrace>
+    <TraceDistance>8</TraceDistance>
+    <SmoothLines>1</SmoothLines>
+  </AutoTrace>
+  <DigitizeArea>
+    <LineOrArea>0</LineOrArea>
+    <RotateAngle>0.000000</RotateAngle>
+    <dx>8.000000</dx>
+  </DigitizeArea>
+</GetDataWorkspace>
