@@ -1,0 +1,15 @@
+version     4
+type        2 O Si
+cutoff      6 4
+n_max       8 8        # default
+basis_size  8 8        # default
+l_max       4 2 0      # default
+neuron      80         # default 30
+lambda_1    0.1        # default 0.05
+lambda_2    0.1        # default 0.05
+lambda_e    1.0        # default 1.0
+lambda_f    1.0        # default 1.0
+lambda_v    0.1        # default 0.1
+population  50         # default
+batch       10000
+generation  200000

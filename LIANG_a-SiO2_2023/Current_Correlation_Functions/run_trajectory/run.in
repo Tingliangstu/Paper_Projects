@@ -1,0 +1,20 @@
+potential      nep.txt
+velocity       500
+
+######### Nose-Hoover ###############
+ensemble       nvt_nhc   500   500   100
+time_step      1
+dump_thermo    20000
+dump_position  50000
+run            100000
+
+ensemble       nvt_lan   500   500   100
+time_step      1
+dump_thermo    20000
+dump_position  400000
+run            400000
+
+ensemble       nve
+#dump_exyz     5    1      0
+dump_netcdf    10    1
+run            200000
