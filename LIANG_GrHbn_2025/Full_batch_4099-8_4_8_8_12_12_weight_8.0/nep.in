@@ -1,0 +1,13 @@
+type          3  B  C  N  # this is a mandatory keyword
+version       4        # default
+cutoff        8 4      # default
+n_max         8 8      # default
+basis_size    12 12    # default
+l_max         4 2 0    # default
+neuron        50       # default 30
+lambda_e      1.0      # default
+lambda_f      1.0      # default
+lambda_v      0.1      # default
+batch         10000    # default
+population    50       # default
+generation    200000   # default

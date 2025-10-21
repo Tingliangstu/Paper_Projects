@@ -1,0 +1,42 @@
+## *************** For SED run *****************
+atom_style      atomic
+units           metal
+#processors      *   *   1
+
+dimension       3
+boundary        p p p
+
+read_data       lammps_data_ABp
+pair_style      nep  nep.txt
+pair_coeff      *    *
+
+timestep        0.001				                 ## 1 fs
+
+variable        T equal  300
+velocity        all create ${T} 123456 mom yes rot yes dist gaussian
+fix             NVT  all   nvt  temp  ${T}   ${T}   0.1 
+
+# *********************  thermo output  ************************
+thermo	        2000
+thermo_style    custom step temp lx ly lz press vol pxx pyy pzz pe ke etotal
+dump            1   all   custom   2000   dump_nvt.optimize   id   type   x   y   z
+dump_modify     1   sort  id
+run           	500000
+unfix           NVT
+undump          1
+
+fix             NVE all nve
+run             100000
+
+variable        dt_dump   equal 50
+dump            vels  all  custom  ${dt_dump}  vels.dat  id  type  vx  vy  vz
+dump_modify     vels  format  line "%d  %d  %0.8g  %0.8g  %0.8g"
+dump_modify     vels  sort  id
+dump            pos   all  custom  ${dt_dump}  pos.dat   id  type  x  y  z
+dump_modify     pos   format  line  "%d  %d  %0.8g  %0.8g  %0.8g"
+dump_modify     pos   sort  id
+
+run             3000000			# 2**21
+unfix           NVE
+
+

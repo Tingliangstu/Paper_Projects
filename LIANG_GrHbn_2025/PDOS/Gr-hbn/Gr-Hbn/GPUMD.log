@@ -1,0 +1,645 @@
+Move file to 1 done !!!
+   
+******************Start running GPUMD tasks********************
+   
+
+***************************************************************
+*                 Welcome to use GPUMD                        *
+*     (Graphics Processing Units Molecular Dynamics)          *
+*                    Version 3.9.3                            *
+*              This is the gpumd executable                   *
+***************************************************************
+
+
+---------------------------------------------------------------
+Compiling options:
+---------------------------------------------------------------
+
+DEBUG is off: Use different PRNG seeds for different runs.
+
+---------------------------------------------------------------
+GPU information:
+---------------------------------------------------------------
+
+number of GPUs = 3
+Device id:                   0
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+Device id:                   1
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+Device id:                   2
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+GPU-0 can access GPU-1.
+GPU-0 can access GPU-2.
+GPU-1 can access GPU-0.
+GPU-1 can access GPU-2.
+GPU-2 can access GPU-0.
+GPU-2 can access GPU-1.
+
+---------------------------------------------------------------
+Started running GPUMD.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Started initializing positions and related parameters.
+---------------------------------------------------------------
+
+Number of atoms is 24644.
+Use periodic boundary conditions along x.
+Use periodic boundary conditions along y.
+Use free boundary conditions along z.
+Use orthogonal box.
+Box lengths are
+    Lx =     1.3730536473e+02 A
+    Ly =     2.3781981652e+02 A
+    Lz =     2.0680000000e+02 A
+Do not specify initial velocities here.
+Have 1 grouping method(s).
+There are 2 groups of atoms in grouping method 0.
+    12544 atoms in group 0.
+    12100 atoms in group 1.
+There are 3 atom types.
+    6050 atoms of type 0.
+    12544 atoms of type 1.
+    6050 atoms of type 2.
+
+---------------------------------------------------------------
+Finished initializing positions and related parameters.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Started executing the commands in run.in.
+---------------------------------------------------------------
+
+Try to use 3 GPUs for the NEP part.
+Use the NEP4 potential with 3 atom types.
+    type 0 (B with Z = 5).
+    type 1 (C with Z = 6).
+    type 2 (N with Z = 7).
+    radial cutoff = 8 A.
+    angular cutoff = 4 A.
+    MN_radial = 414.
+    MN_angular = 46.
+    enlarged MN_radial = 518.
+    enlarged MN_angular = 58.
+    n_max_radial = 8.
+    n_max_angular = 8.
+    basis_size_radial = 12.
+    basis_size_angular = 12.
+    l_max_3body = 4.
+    l_max_4body = 2.
+    l_max_5body = 0.
+    ANN = 54-50-1.
+    number of neural network parameters = 8401.
+    number of descriptor parameters = 2106.
+    total number of parameters = 10507
+Initialized velocities with T = 300 K.
+Use NPT ensemble for this run.
+    choose the SCR method.
+    initial temperature is 300 K.
+    final temperature is 300 K.
+    tau_T is 100 time_step.
+    pressure_xx is 0 GPa.
+    pressure_yy is 0 GPa.
+    pressure_zz is 0 GPa.
+    modulus_xx is 50 GPa.
+    modulus_yy is 50 GPa.
+    modulus_zz is 50 GPa.
+    tau_p is 1000 time_step.
+Time step for this run is 1 fs.
+Dump thermo every 10000 steps.
+Dump position.
+    every 100000 steps.
+Run 1000000 steps.
+    100000 steps completed.
+    200000 steps completed.
+    300000 steps completed.
+    400000 steps completed.
+    500000 steps completed.
+    600000 steps completed.
+    700000 steps completed.
+    800000 steps completed.
+    900000 steps completed.
+    1000000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 2659.23 second.
+Speed of this run = 9.26734e+06 atom*step/second.
+---------------------------------------------------------------
+
+Use NVE ensemble for this run.
+Compute phonon DOS.
+    sample interval is 2.
+    number of correlation steps is 500.
+    maximal angular frequency is 400 THz.
+    grouping method is 0 and group ID is -1.
+Dump position.
+    every 1000000 steps.
+Run 2000000 steps.
+    200000 steps completed.
+    400000 steps completed.
+    600000 steps completed.
+    800000 steps completed.
+    1000000 steps completed.
+    1200000 steps completed.
+    1400000 steps completed.
+    1600000 steps completed.
+    1800000 steps completed.
+    2000000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 5815.07 second.
+Speed of this run = 8.47591e+06 atom*step/second.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Finished executing the commands in run.in.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Time used = 8474.370000 s.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Finished running GPUMD.
+---------------------------------------------------------------
+
+Thu Jul  4 03:28:06 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     Off | 00000000:17:00.0 Off |                    0 |
+|  0%   48C    P0              80W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40                     Off | 00000000:31:00.0 Off |                    0 |
+|  0%   46C    P0              82W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A40                     Off | 00000000:CA:00.0 Off |                    0 |
+|  0%   47C    P0              79W / 300W |      4MiB / 46068MiB |      6%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+   
+******************End running GPUMD tasks********************
+   
+20240704-01:06 ---> 20240704-03:28 Total:2  hours
+Submitted done !!!
+
+************** Finish 1 GPUMD *********************
+
+Move file to 2 done !!!
+   
+******************Start running GPUMD tasks********************
+   
+
+***************************************************************
+*                 Welcome to use GPUMD                        *
+*     (Graphics Processing Units Molecular Dynamics)          *
+*                    Version 3.9.3                            *
+*              This is the gpumd executable                   *
+***************************************************************
+
+
+---------------------------------------------------------------
+Compiling options:
+---------------------------------------------------------------
+
+DEBUG is off: Use different PRNG seeds for different runs.
+
+---------------------------------------------------------------
+GPU information:
+---------------------------------------------------------------
+
+number of GPUs = 3
+Device id:                   0
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+Device id:                   1
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+Device id:                   2
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+GPU-0 can access GPU-1.
+GPU-0 can access GPU-2.
+GPU-1 can access GPU-0.
+GPU-1 can access GPU-2.
+GPU-2 can access GPU-0.
+GPU-2 can access GPU-1.
+
+---------------------------------------------------------------
+Started running GPUMD.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Started initializing positions and related parameters.
+---------------------------------------------------------------
+
+Number of atoms is 24644.
+Use periodic boundary conditions along x.
+Use periodic boundary conditions along y.
+Use free boundary conditions along z.
+Use orthogonal box.
+Box lengths are
+    Lx =     1.3730536473e+02 A
+    Ly =     2.3781981652e+02 A
+    Lz =     2.0680000000e+02 A
+Do not specify initial velocities here.
+Have 1 grouping method(s).
+There are 2 groups of atoms in grouping method 0.
+    12544 atoms in group 0.
+    12100 atoms in group 1.
+There are 3 atom types.
+    6050 atoms of type 0.
+    12544 atoms of type 1.
+    6050 atoms of type 2.
+
+---------------------------------------------------------------
+Finished initializing positions and related parameters.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Started executing the commands in run.in.
+---------------------------------------------------------------
+
+Try to use 3 GPUs for the NEP part.
+Use the NEP4 potential with 3 atom types.
+    type 0 (B with Z = 5).
+    type 1 (C with Z = 6).
+    type 2 (N with Z = 7).
+    radial cutoff = 8 A.
+    angular cutoff = 4 A.
+    MN_radial = 414.
+    MN_angular = 46.
+    enlarged MN_radial = 518.
+    enlarged MN_angular = 58.
+    n_max_radial = 8.
+    n_max_angular = 8.
+    basis_size_radial = 12.
+    basis_size_angular = 12.
+    l_max_3body = 4.
+    l_max_4body = 2.
+    l_max_5body = 0.
+    ANN = 54-50-1.
+    number of neural network parameters = 8401.
+    number of descriptor parameters = 2106.
+    total number of parameters = 10507
+Initialized velocities with T = 300 K.
+Use NPT ensemble for this run.
+    choose the SCR method.
+    initial temperature is 300 K.
+    final temperature is 300 K.
+    tau_T is 100 time_step.
+    pressure_xx is 0 GPa.
+    pressure_yy is 0 GPa.
+    pressure_zz is 0 GPa.
+    modulus_xx is 50 GPa.
+    modulus_yy is 50 GPa.
+    modulus_zz is 50 GPa.
+    tau_p is 1000 time_step.
+Time step for this run is 1 fs.
+Dump thermo every 10000 steps.
+Dump position.
+    every 100000 steps.
+Run 1000000 steps.
+    100000 steps completed.
+    200000 steps completed.
+    300000 steps completed.
+    400000 steps completed.
+    500000 steps completed.
+    600000 steps completed.
+    700000 steps completed.
+    800000 steps completed.
+    900000 steps completed.
+    1000000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 2671.01 second.
+Speed of this run = 9.22647e+06 atom*step/second.
+---------------------------------------------------------------
+
+Use NVE ensemble for this run.
+Compute phonon DOS.
+    sample interval is 2.
+    number of correlation steps is 500.
+    maximal angular frequency is 400 THz.
+    grouping method is 0 and group ID is -1.
+Dump position.
+    every 1000000 steps.
+Run 2000000 steps.
+    200000 steps completed.
+    400000 steps completed.
+    600000 steps completed.
+    800000 steps completed.
+    1000000 steps completed.
+    1200000 steps completed.
+    1400000 steps completed.
+    1600000 steps completed.
+    1800000 steps completed.
+    2000000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 5816.82 second.
+Speed of this run = 8.47336e+06 atom*step/second.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Finished executing the commands in run.in.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Time used = 8487.910000 s.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Finished running GPUMD.
+---------------------------------------------------------------
+
+Thu Jul  4 05:50:00 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     Off | 00000000:17:00.0 Off |                    0 |
+|  0%   48C    P0              80W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40                     Off | 00000000:31:00.0 Off |                    0 |
+|  0%   46C    P0              82W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A40                     Off | 00000000:CA:00.0 Off |                    0 |
+|  0%   47C    P0              79W / 300W |      4MiB / 46068MiB |      4%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+   
+******************End running GPUMD tasks********************
+   
+20240704-03:28 ---> 20240704-05:50 Total:2  hours
+Submitted done !!!
+
+************** Finish 2 GPUMD *********************
+
+Move file to 3 done !!!
+   
+******************Start running GPUMD tasks********************
+   
+
+***************************************************************
+*                 Welcome to use GPUMD                        *
+*     (Graphics Processing Units Molecular Dynamics)          *
+*                    Version 3.9.3                            *
+*              This is the gpumd executable                   *
+***************************************************************
+
+
+---------------------------------------------------------------
+Compiling options:
+---------------------------------------------------------------
+
+DEBUG is off: Use different PRNG seeds for different runs.
+
+---------------------------------------------------------------
+GPU information:
+---------------------------------------------------------------
+
+number of GPUs = 3
+Device id:                   0
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+Device id:                   1
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+Device id:                   2
+    Device name:             NVIDIA A40
+    Compute capability:      8.6
+    Amount of global memory: 44.3517 GB
+    Number of SMs:           84
+GPU-0 can access GPU-1.
+GPU-0 can access GPU-2.
+GPU-1 can access GPU-0.
+GPU-1 can access GPU-2.
+GPU-2 can access GPU-0.
+GPU-2 can access GPU-1.
+
+---------------------------------------------------------------
+Started running GPUMD.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Started initializing positions and related parameters.
+---------------------------------------------------------------
+
+Number of atoms is 24644.
+Use periodic boundary conditions along x.
+Use periodic boundary conditions along y.
+Use free boundary conditions along z.
+Use orthogonal box.
+Box lengths are
+    Lx =     1.3730536473e+02 A
+    Ly =     2.3781981652e+02 A
+    Lz =     2.0680000000e+02 A
+Do not specify initial velocities here.
+Have 1 grouping method(s).
+There are 2 groups of atoms in grouping method 0.
+    12544 atoms in group 0.
+    12100 atoms in group 1.
+There are 3 atom types.
+    6050 atoms of type 0.
+    12544 atoms of type 1.
+    6050 atoms of type 2.
+
+---------------------------------------------------------------
+Finished initializing positions and related parameters.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Started executing the commands in run.in.
+---------------------------------------------------------------
+
+Try to use 3 GPUs for the NEP part.
+Use the NEP4 potential with 3 atom types.
+    type 0 (B with Z = 5).
+    type 1 (C with Z = 6).
+    type 2 (N with Z = 7).
+    radial cutoff = 8 A.
+    angular cutoff = 4 A.
+    MN_radial = 414.
+    MN_angular = 46.
+    enlarged MN_radial = 518.
+    enlarged MN_angular = 58.
+    n_max_radial = 8.
+    n_max_angular = 8.
+    basis_size_radial = 12.
+    basis_size_angular = 12.
+    l_max_3body = 4.
+    l_max_4body = 2.
+    l_max_5body = 0.
+    ANN = 54-50-1.
+    number of neural network parameters = 8401.
+    number of descriptor parameters = 2106.
+    total number of parameters = 10507
+Initialized velocities with T = 300 K.
+Use NPT ensemble for this run.
+    choose the SCR method.
+    initial temperature is 300 K.
+    final temperature is 300 K.
+    tau_T is 100 time_step.
+    pressure_xx is 0 GPa.
+    pressure_yy is 0 GPa.
+    pressure_zz is 0 GPa.
+    modulus_xx is 50 GPa.
+    modulus_yy is 50 GPa.
+    modulus_zz is 50 GPa.
+    tau_p is 1000 time_step.
+Time step for this run is 1 fs.
+Dump thermo every 10000 steps.
+Dump position.
+    every 100000 steps.
+Run 1000000 steps.
+    100000 steps completed.
+    200000 steps completed.
+    300000 steps completed.
+    400000 steps completed.
+    500000 steps completed.
+    600000 steps completed.
+    700000 steps completed.
+    800000 steps completed.
+    900000 steps completed.
+    1000000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 2673.45 second.
+Speed of this run = 9.21805e+06 atom*step/second.
+---------------------------------------------------------------
+
+Use NVE ensemble for this run.
+Compute phonon DOS.
+    sample interval is 2.
+    number of correlation steps is 500.
+    maximal angular frequency is 400 THz.
+    grouping method is 0 and group ID is -1.
+Dump position.
+    every 1000000 steps.
+Run 2000000 steps.
+    200000 steps completed.
+    400000 steps completed.
+    600000 steps completed.
+    800000 steps completed.
+    1000000 steps completed.
+    1200000 steps completed.
+    1400000 steps completed.
+    1600000 steps completed.
+    1800000 steps completed.
+    2000000 steps completed.
+
+---------------------------------------------------------------
+Time used for this run = 5821.62 second.
+Speed of this run = 8.46637e+06 atom*step/second.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Finished executing the commands in run.in.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Time used = 8495.160000 s.
+---------------------------------------------------------------
+
+
+---------------------------------------------------------------
+Finished running GPUMD.
+---------------------------------------------------------------
+
+Thu Jul  4 08:12:02 2024       
++---------------------------------------------------------------------------------------+
+| NVIDIA-SMI 535.104.05             Driver Version: 535.104.05   CUDA Version: 12.2     |
+|-----------------------------------------+----------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |         Memory-Usage | GPU-Util  Compute M. |
+|                                         |                      |               MIG M. |
+|=========================================+======================+======================|
+|   0  NVIDIA A40                     Off | 00000000:17:00.0 Off |                    0 |
+|  0%   48C    P0              80W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   1  NVIDIA A40                     Off | 00000000:31:00.0 Off |                    0 |
+|  0%   46C    P0              82W / 300W |      4MiB / 46068MiB |      0%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+|   2  NVIDIA A40                     Off | 00000000:CA:00.0 Off |                    0 |
+|  0%   47C    P0              79W / 300W |      4MiB / 46068MiB |      4%      Default |
+|                                         |                      |                  N/A |
++-----------------------------------------+----------------------+----------------------+
+                                                                                         
++---------------------------------------------------------------------------------------+
+| Processes:                                                                            |
+|  GPU   GI   CI        PID   Type   Process name                            GPU Memory |
+|        ID   ID                                                             Usage      |
+|=======================================================================================|
+|  No running processes found                                                           |
++---------------------------------------------------------------------------------------+
+   
+******************End running GPUMD tasks********************
+   
+20240704-05:50 ---> 20240704-08:12 Total:2  hours
+Submitted done !!!
+
+************** Finish 3 GPUMD *********************
+

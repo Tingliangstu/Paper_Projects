@@ -1,0 +1,28 @@
+potential      nep.txt
+velocity       300
+
+
+ensemble       npt_scr 300 300 100 0 0 0 50 50 50 1000
+time_step      0.5
+dump_thermo    10000
+dump_position  100000
+run            1000000
+
+######### Nose-Hoover ###############
+ensemble       nvt_nhc   300  300  100
+time_step      0.5
+dump_thermo    10000
+dump_position  250000
+run            500000
+
+#################################### NEMD ##############################################
+## ************** fist '2' in the compute_shc means z direciton ******************######
+# ************** second '1' in the compute_shc means grouping method 1 ******************
+
+ensemble             heat_lan  300.0  100  30.0   22  1        # 100*1 = 0.1 ps
+fix                  0
+compute              0    10    100  temperature 
+compute_shc          2    500   2    1000   400  group  0  12  # Gr 
+dump_position        1000000
+
+run                  5000000

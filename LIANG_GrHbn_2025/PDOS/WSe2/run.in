@@ -1,0 +1,14 @@
+potential      nep.txt
+velocity       300
+
+ensemble       npt_scr 300 300 100 0 0 0 50 50 50 1000
+time_step      1
+dump_thermo    10000
+dump_position  100000
+run            1000000
+
+ensemble             nve
+compute_dos          2    500   300  # group  0  -1    
+dump_position        1000000
+
+run                  2000000
